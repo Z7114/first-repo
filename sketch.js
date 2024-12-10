@@ -5,11 +5,11 @@ function setup() {
 function draw() {
   background(mouseX, 50, mouseY);
 
-  let c1 = fill(0);
+  let c1 = fill(mouseY, 50, mouseX);
   noStroke();
-  ellipse(200, 200, 200);
+  ellipse(200, 200, random(10, 400));
 
-  let c2 = fill(255);
+  let c2 = fill(0);
   textSize(20);
   textFont('Courier New');
   text("This Is A Circle", 100, 50);
