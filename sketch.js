@@ -7,7 +7,9 @@ function draw() {
 
   let c1 = fill(mouseY, 50, mouseX);
   noStroke();
-  ellipse(200, 200, random(10, 400));
+  if (keyIsPressed == true) {
+    ellipse(200, 200, random(10, 400));
+  }
 
   let c2 = fill(0);
   textSize(20);
