@@ -3,6 +3,15 @@ function setup() {
 }
 
 function draw() {
-  background(255);
+  background(mouseX, 50, mouseY);
+
+  let c1 = fill(0);
+  noStroke();
+  ellipse(200, 200, 200);
+
+  let c2 = fill(255);
+  textSize(20);
+  textFont('Courier New');
+  text("This Is A Circle", 100, 50);
 
 }
